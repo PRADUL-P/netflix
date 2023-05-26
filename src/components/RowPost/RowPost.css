@@ -1,0 +1,129 @@
+.row{
+    margin-left: 20px;
+    color: azure;
+
+}
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.smallPoster{
+ max-height: 150px;
+ margin-right: 10px;
+ cursor: pointer;
+
+}
+.poster:hover{
+    transform: scale(1.2);
+}
+.smallPoster:hover{
+    transform: scale(1.2);
+}
+
+/* RowPost.css */
+
+/* Styles for the modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* Styles for the overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styles for the close button */
+  .closeButton {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background-color: transparent;
+    color: #d91010;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+.posters {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+
+  
+  .row {
+    position: relative;
+  }
+  
+  .scrollButton {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0.7;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(210, 42, 42, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.scrollButton:hover {
+  opacity: 1;
+}
+  .scrollButton.left {
+    left: 0;
+  }
+  
+  .scrollButton.right {
+    right: 0;
+  }
+  
